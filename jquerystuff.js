@@ -7,7 +7,7 @@
 			$(".hamburger").fadeOut("slow");
 			$(".cross").fadeIn();
 			$("nav ul").slideToggle("slow");
-		});
+        });
 
 		$(".cross").click(function() {
 			$(".cross").fadeOut();
