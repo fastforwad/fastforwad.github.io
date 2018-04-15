@@ -8,38 +8,55 @@ body{
 	width:100%;
 	height:100vh;
 	background: #273043;
-    font-family: calibri;
+    /*font-family: calibri;*/
+    font-family: 'Roboto', sans-serif;
+    color:#BCB5B5;
 }
 
 body section{
     margin-top: 100px;
 }
+/*changed by greg*/
 header{
 	z-index:1;
 	height:100px; 
 	width:100%;
 	background:#273043; 
 	border-bottom:1px solid #dddddd;
-
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
-
+iframe{
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
 h2{
-	color:#BCB5B5;
-    font-size: 22px;
+	/*color:#BCB5B5;*/
+    color: white;
+    font-size: 2em;
 
 }
+/*end of changed by greg*/
 button {
 	outline: none;
 
 }
 footer{
+    position: fixed;
     bottom:1%;
     left:10px;
     right:0;
-    color:#BCB5B5
-
 }
+
+.portrait{
+    position: relative;
+    bottom: -2em;
+    padding-bottom: 1em;
+}
+
 .clearfix{
     clear: both;
 }
@@ -51,15 +68,16 @@ footer{
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-    font-family: calibri;
-    font-size: 22px;
+    /*font-family: calibri;*/
+    font-size: 3em;
     color:#BCB5B5
 
 }
 .hamburger {
      background:#273043;
      position:absolute;
-     margin:20px;
+     left :20px;
+     top: 20px;
      padding:10px;
      border-radius:20px;
      border-width: 1px;
