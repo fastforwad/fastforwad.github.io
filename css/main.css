@@ -7,11 +7,13 @@ body{
 	position:absolute;
 	width:100%;
 	height:100vh;
-	margin-top:100px;
 	background: #273043;
     font-family: calibri;
 }
 
+body section{
+    margin-top: 100px;
+}
 header{
 	z-index:1;
 	height:100px; 
@@ -20,8 +22,6 @@ header{
 	border-bottom:1px solid #dddddd;
 
 }
-
-
 
 
 h2{
@@ -34,7 +34,6 @@ button {
 
 }
 footer{
-    position: fixed;
     bottom:1%;
     left:10px;
     right:0;
@@ -111,6 +110,7 @@ nav{
 	top: 0;
 	left:0;
 	right:0;
+	/*! margin-top: 100v; */
 }
 nav ul{
 	position:absolute;
@@ -177,6 +177,26 @@ nav ul li:nth-child(6) {
   background: #EC8F0F;
 }
 
+.indexham {
+	box-shadow: 0 0 22px #1CA9BF;
+}
+.threedham{
+	box-shadow: 0 0 22px #96F05D;
+}
+.twodham {
+	box-shadow: 0 0 22px #F21313;
+}
+
+.animham{
+	box-shadow: 0 0 22px #EC8F0F;
+}
+.aboutham{
+	box-shadow: 0 0 22px #883500;
+}
+
+.contactham{
+	box-shadow: 0 0 22px #EC8F0F;
+}
 .thumbs{
     max-height: 60vw;
     min-height: 60vw;
