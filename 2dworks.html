@@ -6,6 +6,15 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <script src="jquery.js"></script>
 <script type="text/javascript" src="jquerystuff.js"></script>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="unitegallery/js/unitegallery.min.js"></script> 
+		
+		<link rel="stylesheet" href="unitegallery/css/unite-gallery.css" type="text/css" /> 
+		<script type="text/javascript" src="unitegallery/themes/compact/ug-theme-compact.js"></script> 
+		<link rel="stylesheet" href="unitegallery/themes/default/ug-theme-default.css" type="text/css" /> 
+	
+	
 </head>
 <body>
 <nav>
@@ -22,17 +31,64 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-<section>
+
   
-  <section class = "thumbs crop">
+	
+		<section id="gallery" style="display:none;">
+		
+			<img alt="This is a painting of objects" src="images/2dsetup.jpg"
+				data-image="images/2dsetup.jpg"
+				data-description="Objects setup">
+			
+			<img alt="This is a painting of two stones" src="images/2dstones.jpg"
+				data-image="images/2dstones.jpg"
+				data-description="Stones light study">
+			
+			<img alt="This is a painting of some dinos looking at sunrise." src="images/2ddino.jpg"
+				data-image="images/2ddino.jpg"
+				data-description="Dinosaurs">
+			
+			<img alt="This is a painting of a castle at night." src="images/2dspeed1.jpg"
+				data-image="images/2dspeed1.jpg"
+				data-description="Castle">
+			
+			<img alt="This is a painting of a girl in the forest." src="images/2dfinal.jpg"
+				data-image="images/2dfinal.jpg"
+				data-description="Forest">
+			
+			<img alt="Youtube With Images"
+			 data-type="youtube"
+			 src="thumbs/youtube_thumb.jpg"
+			 data-image="images/youtube_image.jpg"		 
+			 data-videoid="A3PDXmYoF5U"
+			 data-description="Youtube video description">
+			
+			<img alt="Vimeo Video"
+			 data-type="vimeo"
+			 src="https://i.vimeocdn.com/video/447294219 200x150.jpg"
+			 data-image="images/vimeo_image.jpg"		 
+			 data-videoid="73234449"
+			 data-description="Vimeo Video Description">
+			
+		
+		</section>
+ <!-- <section class = "thumbs crop">
 		<img src="images/2dsetup.jpg" alt="This is a painting of objects."> 
 		<img src="images/2dstones.jpg" alt="This is a painting of two stones."> 
 		<img src="images/2ddino.jpg" alt="This is a painting of some dinos looking at sunrise."> 
 		<img src="images/2dspeed1.jpg" alt="This is a painting of a castle at night."> 
 		<img src="images/2dfinalcut.jpg" alt="This is a painting of a girl in the forest."> 
   </section>
-</section>
+</section>-->
 <!--<section class="clearfix"></section>-->
 <footer>&copy; 2018 by Hui Yi Tan</footer>
 </body>
+	
+	<script type="text/javascript"> 
+			
+			jQuery(document).ready(function(){ 
+				jQuery("#gallery").unitegallery(); 
+			}); 
+		
+		</script>
 </html>
