@@ -29,13 +29,34 @@
   </ul>
 </nav>
 
-	<section id="videogallery">
-	<a href="https://vimeo.com/253022187" data-poster="images/animreel1.JPG" class=vid><img src="images/animreel1.JPG" alt="Animation Reel"></a>
-		
-	<a href="https://vimeo.com/256031682" data-poster="images/gonewind.JPG" class=vid><img src="images/gonewind.JPG" alt="Animation Gone with the Wind"></a>
+	<section style="display:none;" id="video1">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="video/portfolio.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</section>
+<section style="display:none;" id="video2">
+    <video class="lg-video-object lg-html5" controls preload="none">
+        <source src="video/finalrename.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+    </video>
+</section>
+
+	<section class="gallery">
+<ul id="html5vid">
+  <li data-poster="images/animreel1.JPG" data-sub-html="3D Animation Reel- Tan Hui Yi (2017)" data-html="#video1" >
+      <img src="images/animreel1.JPG" />
+  </li>
+  <li data-poster="images/gonewind.JPG" data-sub-html="Gone with the Wind (2016)" data-html="#video2" >
+      <img src="images/gonewind.JPG" />
+  </li>
+  
+</ul>
+</section>
+<section class="clearfix"></section>
 	
 
-	</section>
+	
 <!--<iframe src="https://player.vimeo.com/video/253022187" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   <p>This is animation reel of exercises from 3D Animation class, made in Autodesk Maya. Some exercises include bouncing balls, walk and run cycles, and a short dance sequence. Animation principles learnt in class, such as anticipation, and squash and stretch, were applied to achieve the resulting work. My main takeaway from these exercises was understanding the importance to really observe and understand how things move, and only by doing this, can we make them look even more interesting with animation.</p>
   <iframe src="https://player.vimeo.com/video/256031682" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -45,19 +66,12 @@
 <script src="js/lightgallery.min.js"></script>
 <script src="js/lg-fullscreen.min.js"></script>
 <script src="js/lg-thumbnail.min.js"></script>
-<script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
 <script src="js/lg-video.min.js"></script>
-<script src="js/lg-pager.min.js"></script>
-<script src="js/lg-hash.min.js"></script>
 <script src="js/lg-zoom.min.js"></script>
 <script>
 $(document).ready(function(){
 	
-	 $('#videogallery').lightGallery({
-		selector: ".vid",
-        loadVimeoThumbnail: true,
-        vimeoThumbSize: "thumbnail_medium",
- });
+	 $("#html5vid").lightGallery()
    });	
 </script>
 		
