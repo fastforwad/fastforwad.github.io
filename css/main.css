@@ -2,127 +2,109 @@
 	margin: 0;
 	padding: 0;
 }
-body {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	background: #273043;
-	font-family: 'Roboto', sans-serif;
-	color: #BCB5B5;
-}
-body section {
-	margin-top: 100px;
-}
-header {
-	z-index: 1;
-	height: 100px;
-	width: 100%;
-	background: #273043;
-	border-bottom: 1px solid #dddddd;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
 
-
-
-.video {
-	text-align: center;
-	margin-bottom: 20px;
-}
-.video iframe {
-	width: 100%;
-	height: 360px;
-}
-
-.video p {
-	margin: 1em;
-	text-align: justify;
-}
-.vp-player-layout {
-	height: auto!important;
-	top: 0!important;
-}
-/*.iframecon{
-	position: relative;
-	padding-bottom: 56.25%;  16:9 
-	padding-top: 25px;
-	height: 0;
-}
-.iframecon iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-
-}
-
-.iframecon p{
+body{
 	position:absolute;
-	top: 0;
-}*/
-h2 {
-	/*color:#BCB5B5;*/
-	color: white;
-	font-size: 2em;
+	width:100%;
+	height:100vh;
+	background: #273043;
+    /*font-family: calibri;*/
+    font-family: 'Roboto', sans-serif;
+    color:#BCB5B5;
 }
+
+body section{
+    margin-top: 100px;
+}
+/*changed by greg*/
+header{
+	z-index:1;
+	height:100px; 
+	width:100%;
+	background:#273043; 
+	border-bottom:1px solid #dddddd;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+iframe{
+    margin-top: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+h2{
+	/*color:#BCB5B5;*/
+    color: white;
+    font-size: 2em;
+
+}
+/*end of changed by greg*/
 button {
 	outline: none;
+
 }
-footer {
-	position: fixed;
-	bottom: 1%;
-	left: 10px;
-	right: 0;
+footer{
+    position: fixed;
+    bottom:1%;
+    left:10px;
+    right:0;
 }
-.portrait {
-	position: relative;
-	bottom: -2em;
-	padding-bottom: 1em;
+
+.portrait{
+    position: relative;
+    bottom: -2em;
+    padding-bottom: 1em;
 }
-.clearfix {
-	clear: both;
+
+.clearfix{
+    clear: both;
 }
-#welcome {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-right: -50%;
-	transform: translate(-50%, -50%);
-	/*font-family: calibri;*/
-	font-size: 3em;
-	color: #BCB5B5
+
+#welcome{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /*font-family: calibri;*/
+    font-size: 3em;
+    color:#BCB5B5
+
 }
 .hamburger {
-	background: #273043;
-	position: absolute;
-	left : 20px;
-	top: 20px;
-	padding: 10px;
-	border-radius: 20px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: white;
-	cursor: pointer;
-	z-index: 10000000000000;
+     background:#273043;
+     position:absolute;
+     left :20px;
+     top: 20px;
+     padding:10px;
+     border-radius:20px;
+     border-width: 1px;
+     border-style: solid;
+     border-color: white;
+     cursor:pointer;
+     z-index:10000000000000;
 }
-.hamburger img {
-	height: 2.5em;
+
+.hamburger img{
+    height:2.5em;
 }
-.cross {
-	background: none;
-	border: none;
-	position: absolute;
-	top: 0px;
-	right: 0;
-	font-size: 3em;
-	padding: 15px 35px 0px 15px;
-	cursor: pointer;
-	color: #BCB5B5;
-	z-index: 10000000000000;
+
+.cross{
+     background:none;
+     border:none;
+     position:absolute;
+     top:0px;
+     right:0;
+     font-size:3em;
+     padding:15px 35px 0px 15px;
+     cursor:pointer;
+     color:#BCB5B5;
+     z-index:10000000000000;
 }
+
+
 /* burger .burger img {
     height:6vh;
 	background: #273043;
@@ -139,24 +121,30 @@ footer {
 
 	
 		
-nav {
+nav{
 	z-index: 1000000;
-	position: fixed;
-	width: 100%;
+    position: fixed;
+    width:100%;
 	top: 0;
-	left: 0;
-	right: 0;/*! margin-top: 100v; */
+	left:0;
+	right:0;
+	/*! margin-top: 100v; */
 }
-nav ul {
-	position: absolute;
-	list-style-type: none;
+nav ul{
+	position:absolute;
+    list-style-type: none;
 	margin: 0;
 	padding: 0;
-	height: 100vh;
-	width: 100%;
-	/*273043*/
-	background: linear-gradient(180deg,  rgba(39,48,67,1.0) 0%,  rgba(39,48,67,0.97) 100%  );
-	z-index: 1000000;/*position: absolute;
+    height: 100vh;
+	width:100%;
+    /*273043*/
+	background: linear-gradient(180deg, 
+        rgba(39,48,67,1.0) 0%, 
+        rgba(39,48,67,0.97) 100%
+    );
+	z-index:1000000;
+	
+    /*position: absolute;
     background: white;
     top: 50%;
     left: 50%;
@@ -166,89 +154,102 @@ nav ul {
 	
 	
 }
+
 nav ul li {
-	position: relative;
-	border-radius: 15px;
+    position: relative;
+    border-radius:15px;
 	max-width: 300px;
-	min-width: 200px;
-	width: 30%;
-	padding: 8px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5vh;
+	min-width:200px;
+    width:30%;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
 	margin-bottom: 5vh;
-	font-size: 22px;
-	text-align: center;
+    font-size: 22px;
+    text-align: center;
 }
+
 nav ul a {
 	text-decoration: none;
 	color: black;
 	display: block;
 }
+
 nav ul li:nth-child(1) {
-	background: #EC8F0F;
+  background: #EC8F0F;
 }
 nav ul li:nth-child(2) {
-	background: #96F05D;
+  background: #96F05D;
 }
 nav ul li:nth-child(3) {
-	background: #F21313;
+  background: #F21313;
 }
 nav ul li:nth-child(4) {
-	background: #FFF818;
+  background: #FFF818;
 }
 nav ul li:nth-child(5) {
-	background: #883500;
+  background: #883500;
 }
 nav ul li:nth-child(6) {
-	background: #EC8F0F;
+  background: #EC8F0F;
 }
+
 .indexham {
 	box-shadow: 0 0 22px #1CA9BF;
 }
-.threedham {
+.threedham{
 	box-shadow: 0 0 22px #96F05D;
 }
 .twodham {
 	box-shadow: 0 0 22px #F21313;
 }
-.animham {
+
+.animham{
 	box-shadow: 0 0 22px #EC8F0F;
 }
-.aboutham {
+.aboutham{
 	box-shadow: 0 0 22px #883500;
 }
-.contactham {
+
+.contactham{
 	box-shadow: 0 0 22px #EC8F0F;
 }
-.thumbs {
-	max-height: 60vw;
-	min-height: 60vw;
-	max-width: 100%;
-	min-width: 100%;
-	float: left;
+.thumbs{
+    max-height: 60vw;
+    min-height: 60vw;
+    max-width: 100%;
+    min-width: 100%;
+    float: left;
+
 }
 .thumbs img {
-	position: relative;
-	width: 20%;
+    position: relative;
+    width: 20%;
 	height: 20%;
 	padding: 0.5%;
 	margin-bottom: 10px;
-	
-}
-.crop {
-	height: 300px;
-}
-.crop img {
-	height: 40%;
-	width: auto;
+    background-color: orange;
 }
 
-/* mobile landscape */
-@media screen and (min-width: 360px) and (max-width: 425px) {
-.thumbs {
-	width: 46%;
+.crop{
+    height: 300px;
+   
 }
+
+.crop img{
+    height: 40%;
+    width: auto;
+}
+
+
+/* mobile landscape */
+        @media screen and (min-width: 360px) and (max-width: 425px) {
+
+            .thumbs{
+                width: 46%;
+            }
+			
 /* ipad */
 		
 }
