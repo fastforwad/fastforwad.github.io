@@ -242,6 +242,15 @@ nav ul li:nth-child(6) {
     width: auto;
 }
 
+#lightgallery img{
+	height:18vh;
+	
+}
+
+#videogallery img{
+	height:18vh;
+	
+}
 
 /* mobile landscape */
         @media screen and (min-width: 360px) and (max-width: 425px) {

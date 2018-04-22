@@ -1,13 +1,17 @@
 <!doctype html>
 <html>
 <head>
-<title>Hui Yi - 2D Works</title>
+<title>Hui Yi - 2D Works</title> 
+<meta charset="UTF-8">
 <link rel="stylesheet" href="css/main.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="css/lg-transitions.min.css">
 <script src="jquery.js"></script>
 <script type="text/javascript" src="jquerystuff.js"></script>
+<link rel="stylesheet" href="css/lightgallery.min.css">
 </head>
 <body>
+
 <nav>
   <header>
     <button class="hamburger twodham"> <img src="images/burger2d.png" alt="This is the hamburger button"></button><h2>2D Works</h2>
@@ -22,17 +26,61 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-<section>
-  
-  <section class = "thumbs crop">
+ 
+<section id="lightgallery">
+	
+	<a href="images/2dsetup.jpg">
+		<img src="images/2dsetupthumb.jpg" alt="Live study of objects">
+	</a>
+	
+	<a href="images/2dstones.jpg">
+		<img src="images/2dstonesthumb.jpg" alt="Live study on colored stones in warm light">
+	</a>
+	
+	<a href="images/2ddino.jpg">
+		<img src="images/2ddinothumb.jpg" alt="Composition exercise, dinosaur-themed">
+	</a>
+	
+	<a href="images/2dfinal.jpg">
+		<img src="images/2dfinalcutthumb.jpg" alt="<h4>Forest</h4><p>A forest that has always been around buthidden from sight, only visible to the ones who are willing to believe that it is there. In this forest, nature bathes in golden sunlight. A habitué stands within it, thinking.</p>">
+	</a>
+	
+	<a href="images/2dspeed1.jpg">
+		<img src="images/2dspeed1thumb.jpg" alt="Composition and color exploration, castle-themed">
+	</a>
+	
+	<a href="images/2dspeed2.jpg">
+		<img src="images/2dspeed2thumb.jpg" alt="Composition and color exploration, castle-themed">
+	</a>
+	
+	<a href="images/2dstudy.jpg">
+		<img src="images/2dstudythumb.jpg" alt="Study of Sargent's painting">
+	</a>
+	</section>
+
+  <!--<section id="lightgallery">
 		<img src="images/2dsetup.jpg" alt="This is a painting of objects."> 
 		<img src="images/2dstones.jpg" alt="This is a painting of two stones."> 
 		<img src="images/2ddino.jpg" alt="This is a painting of some dinos looking at sunrise."> 
 		<img src="images/2dspeed1.jpg" alt="This is a painting of a castle at night."> 
 		<img src="images/2dfinalcut.jpg" alt="This is a painting of a girl in the forest."> 
-  </section>
-</section>
-<!--<section class="clearfix"></section>-->
+  </section>-->
+<script src="jquery.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>	
+<script>
+	$(document).ready(function(){
+		$("#lightgallery").lightGallery({
+			thumbnail:true
+		});
+	});
+	</script>
 <footer>&copy; 2018 by Hui Yi Tan</footer>
 </body>
+	
+	
+
+ 
+
 </html>

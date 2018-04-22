@@ -1,11 +1,10 @@
 $(document).ready(function () {
-	$("#lightgallery").lightGallery({
+	/*$("#lightgallery").lightGallery({
 		loadYoutubeThumbnail: true,
 		youtubeThumbSize: 'default',
 		loadVimeoThumbnail: true,
 		vimeoThumbSize: 'thumbnail_medium',
-	});
-	console.log($("#lightgallery").lightGallery);
+	});*/
 	$(".cross").hide();
 	$("nav ul").hide();
 	$(".hamburger").click(function () {

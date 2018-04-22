@@ -4,8 +4,10 @@
 <title>Hui Yi - 3D Works</title>
 <link rel="stylesheet" href="css/main.css" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" href="css/lg-transitions.min.css">
 <script src="jquery.js"></script>
 <script type="text/javascript" src="jquerystuff.js"></script>
+<link rel="stylesheet" href="css/lightgallery.min.css">
 </head>
 <body>
 <nav>
@@ -22,16 +24,48 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-	<section>
+	<section id="lightgallery">
+		
+	<a href="images/3dhipper.png">
+		<img src="images/3dhipperthumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
+	</a>
+	
+	<a href="images/3dhipper2.png">
+		<img src="images/3dhipper2thumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
+	</a>
+	
+	<a href="images/3dhipper3.png">
+		<img src="images/3dhipper3thumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
+	</a>
+	
+	<a href="images/3dplant.png">
+		<img src="images/3dplantthumb.jpg" alt="Modelled after game Plants vs Zombies figurine">
+	</a>
+	
+	<a href="images/3dplant2.png">
+		<img src="images/3dplant2thumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
+	</a>
+</section>
   
-  <section class = "thumbs crop">
+ <!-- <section class = "thumbs crop">
 		<img src="images/3dhipper.png" alt="This is a render of a model after Stickymonsterlab's character."> 
 		<img src="images/3dhipper2.png" alt="This is a second render of a model after Stickymonsterlab's character."> 
 		<img src="images/3dplant.png" alt="This is a render of a model after Plants versus Zombies character."> 
 		<img src="images/3dplant2.png" alt="This is a second render of a model after Plants versus Zombies character.">
 	  
-  </section>
-</section>
+  </section>-->
+	
+<script src="jquery.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/lg-thumbnail.min.js"></script>	
+<script>
+	$(document).ready(function(){
+		$("#lightgallery").lightGallery({
+			thumbnail:true
+		});
+	});
+	</script>
 
 <footer>&copy; 2018 by Hui Yi Tan</footer>
 </body>
