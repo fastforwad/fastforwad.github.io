@@ -218,6 +218,11 @@ nav ul li:nth-child(6) {
 #videogallery img {
 	height: 18vh;
 }
+
+.gallery ul{
+  list-style: none;
+}
+
 .gallery ul li img {
 	border: 3px solid #FFF;
 	border-radius: 5px;
