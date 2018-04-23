@@ -27,33 +27,33 @@
   </ul>
 </nav>
  
-<section id="lightgallery">
+<section id="lightgallery" class="gallery">
 	
-	<a href="images/2dsetup.jpg">
+	<a href="images/2dsetup.jpg" class="imgcon">
 		<img src="images/2dsetupthumb.jpg" alt="Live study of objects">
 	</a>
 	
-	<a href="images/2dstones.jpg">
+	<a href="images/2dstones.jpg" class="imgcon">
 		<img src="images/2dstonesthumb.jpg" alt="Live study on colored stones in warm light">
 	</a>
 	
-	<a href="images/2ddino.jpg">
+	<a href="images/2ddino.jpg" class="imgcon">
 		<img src="images/2ddinothumb.jpg" alt="Composition exercise, dinosaur-themed">
 	</a>
 	
-	<a href="images/2dfinal.jpg">
+	<a href="images/2dfinal.jpg" class="imgcon">
 		<img src="images/2dfinalcutthumb.jpg" alt="<h4>Forest</h4><p>A forest that has always been around buthidden from sight, only visible to the ones who are willing to believe that it is there. In this forest, nature bathes in golden sunlight. A habitué stands within it, thinking.</p>">
 	</a>
 	
-	<a href="images/2dspeed1.jpg">
+	<a href="images/2dspeed1.jpg" class="imgcon">
 		<img src="images/2dspeed1thumb.jpg" alt="Composition and color exploration, castle-themed">
 	</a>
 	
-	<a href="images/2dspeed2.jpg">
+	<a href="images/2dspeed2.jpg" class="imgcon">
 		<img src="images/2dspeed2thumb.jpg" alt="Composition and color exploration, castle-themed">
 	</a>
 	
-	<a href="images/2dstudy.jpg">
+	<a href="images/2dstudy.jpg" class="imgcon">
 		<img src="images/2dstudythumb.jpg" alt="Study of Sargent's painting">
 	</a>
 	</section>
@@ -73,7 +73,9 @@
 <script>
 	$(document).ready(function(){
 		$("#lightgallery").lightGallery({
-			thumbnail:true
+			thumbnail:true,
+			download:false,
+			actualSize:false,
 		});
 	});
 	</script>

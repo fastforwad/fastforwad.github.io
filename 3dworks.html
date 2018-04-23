@@ -24,25 +24,25 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-	<section id="lightgallery">
-		
-	<a href="images/3dhipper.png">
+	<section id="lightgallery" class="gallery">
+
+	<a href="images/3dhipper.png" class="imgcon">
 		<img src="images/3dhipperthumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
 	</a>
 	
-	<a href="images/3dhipper2.png">
+	<a href="images/3dhipper2.png" class="imgcon">
 		<img src="images/3dhipper2thumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
 	</a>
 	
-	<a href="images/3dhipper3.png">
+	<a href="images/3dhipper3.png" class="imgcon">
 		<img src="images/3dhipper3thumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
 	</a>
 	
-	<a href="images/3dplant.png">
+	<a href="images/3dplant.png" class="imgcon">
 		<img src="images/3dplantthumb.jpg" alt="Modelled after game Plants vs Zombies figurine">
 	</a>
 	
-	<a href="images/3dplant2.png">
+	<a href="images/3dplant2.png" class="imgcon">
 		<img src="images/3dplant2thumb.jpg" alt="Modelled after Sticky Monster Lab's Hipper figurine">
 	</a>
 </section>
@@ -63,7 +63,9 @@
 <script>
 	$(document).ready(function(){
 		$("#lightgallery").lightGallery({
-			thumbnail:true
+			thumbnail:true,
+			download:false,
+			actualsize:false,
 		});
 	});
 	</script>
